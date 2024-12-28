@@ -550,8 +550,13 @@ ul {
     width: 100%;
     line-height: 26px;
     font-size: 14px;
-    padding: 60px 92px;
+    padding: 60px 40px;
   }
+}
+
+.content img {
+  width: 200px;
+  height: auto;
 }
 
 
@@ -8861,11 +8866,12 @@ h2 {
   }
 }
 
-/* ホバー時に動きを止める（パターン2・3）*/
+
+/* ホバー時に動きを止める（パターン2・3）
 .slide-paused:hover .slideshow {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
-}
+}*/
 
 /* ホバー時の装飾（パターン3） */
 .content-hover {
