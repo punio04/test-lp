@@ -9,18 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
-  <script defer="" nomodule="" src="/js/polyfills-c67a75d1b6f99dc8.js"></script>
-  <script src="/js/webpack-6ee4c6e6b86b06c2.js" defer=""></script>
-  <script src="/js/framework-a070cbfff3c750c5.js" defer=""></script>
-  <script src="/js/main-9a0054db06945312.js" defer=""></script>
-  <script src="/js/_app-0127ceb68ec9e7f8.js" defer=""></script>
-  <script src="/js/6688-3264813bd0d645e5.js" defer=""></script>
-  <script src="/js/5525-853658cc6f8972e7.js" defer=""></script>
-  <script src="/js/5864-a6b0c77582ce301a.js" defer=""></script>
-  <script src="/js/index-5a862b48d5c4a8e3.js" defer=""></script>
-  <script src="/js/_buildManifest.js" defer=""></script>
-  <script src="/js/_ssgManifest.js" defer=""></script>
   <style>
     @font-face {
       font-family: grandam;
@@ -761,275 +749,6 @@
 
     .sd.section-inner {
       position: static !important
-    }
-  </style>
-
-  <style data-n-href="ae4ed9c503fd1e33.css">
-    .carousel .control-arrow,
-    .carousel.carousel-slider .control-arrow {
-      transition: all .25s ease-in;
-      opacity: .4;
-      filter: alpha(opacity=40);
-      position: absolute;
-      z-index: 2;
-      top: 20px;
-      background: none;
-      border: 0;
-      font-size: 32px;
-      cursor: pointer
-    }
-  
-    .carousel .control-arrow:focus,
-    .carousel .control-arrow:hover {
-      opacity: 1;
-      filter: alpha(opacity=100)
-    }
-  
-    .carousel .control-arrow:before,
-    .carousel.carousel-slider .control-arrow:before {
-      margin: 0 5px;
-      display: inline-block;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      content: ""
-    }
-  
-    .carousel .control-disabled.control-arrow {
-      opacity: 0;
-      filter: alpha(opacity=0);
-      cursor: inherit;
-      display: none
-    }
-  
-    .carousel .control-prev.control-arrow {
-      left: 0
-    }
-  
-    .carousel .control-prev.control-arrow:before {
-      border-right: 8px solid #fff
-    }
-  
-    .carousel .control-next.control-arrow {
-      right: 0
-    }
-  
-    .carousel .control-next.control-arrow:before {
-      border-left: 8px solid #fff
-    }
-  
-    .carousel-root {
-      outline: none
-    }
-  
-    .carousel {
-      position: relative;
-      width: 100%
-    }
-  
-    .carousel * {
-      box-sizing: border-box
-    }
-  
-    .carousel img {
-      width: 100%;
-      display: inline-block;
-      pointer-events: none
-    }
-  
-    .carousel .carousel {
-      position: relative
-    }
-  
-    .carousel .control-arrow {
-      outline: 0;
-      border: 0;
-      background: none;
-      top: 50%;
-      margin-top: -13px;
-      font-size: 18px
-    }
-  
-    .carousel .thumbs-wrapper {
-      margin: 20px;
-      overflow: hidden
-    }
-  
-    .carousel .thumbs {
-      transition: all .15s ease-in;
-      transform: translateZ(0);
-      position: relative;
-      list-style: none;
-      white-space: nowrap
-    }
-  
-    .carousel .thumb {
-      transition: border .15s ease-in;
-      display: inline-block;
-      margin-right: 6px;
-      white-space: nowrap;
-      overflow: hidden;
-      border: 3px solid #fff;
-      padding: 2px
-    }
-  
-    .carousel .thumb:focus {
-      border: 3px solid #ccc;
-      outline: none
-    }
-  
-    .carousel .thumb.selected,
-    .carousel .thumb:hover {
-      border: 3px solid #333
-    }
-  
-    .carousel .thumb img {
-      vertical-align: top
-    }
-  
-    .carousel.carousel-slider {
-      position: relative;
-      margin: 0;
-      overflow: hidden
-    }
-  
-    .carousel.carousel-slider .control-arrow {
-      top: 0;
-      color: #fff;
-      font-size: 26px;
-      bottom: 0;
-      margin-top: 0;
-      padding: 5px
-    }
-  
-    .carousel.carousel-slider .control-arrow:hover {
-      background: rgba(0, 0, 0, .2)
-    }
-  
-    .carousel .slider-wrapper {
-      overflow: hidden;
-      margin: auto;
-      width: 100%;
-      transition: height .15s ease-in
-    }
-  
-    .carousel .slider-wrapper.axis-horizontal .slider {
-      -ms-box-orient: horizontal;
-      display: -moz-flex;
-      display: flex
-    }
-  
-    .carousel .slider-wrapper.axis-horizontal .slider .slide {
-      flex-direction: column;
-      flex-flow: column
-    }
-  
-    .carousel .slider-wrapper.axis-vertical {
-      -ms-box-orient: horizontal;
-      display: -moz-flex;
-      display: flex
-    }
-  
-    .carousel .slider-wrapper.axis-vertical .slider {
-      flex-direction: column
-    }
-  
-    .carousel .slider {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      list-style: none;
-      width: 100%
-    }
-  
-    .carousel .slider.animated {
-      transition: all .35s ease-in-out
-    }
-  
-    .carousel .slide {
-      min-width: 100%;
-      margin: 0;
-      position: relative;
-      text-align: center
-    }
-  
-    .carousel .slide img {
-      width: 100%;
-      vertical-align: top;
-      border: 0
-    }
-  
-    .carousel .slide iframe {
-      display: inline-block;
-      width: calc(100% - 80px);
-      margin: 0 40px 40px;
-      border: 0
-    }
-  
-    .carousel .slide .legend {
-      transition: all .5s ease-in-out;
-      position: absolute;
-      bottom: 40px;
-      left: 50%;
-      margin-left: -45%;
-      width: 90%;
-      border-radius: 10px;
-      background: #000;
-      color: #fff;
-      padding: 10px;
-      font-size: 12px;
-      text-align: center;
-      opacity: .25;
-      transition: opacity .35s ease-in-out
-    }
-  
-    .carousel .control-dots {
-      position: absolute;
-      bottom: 0;
-      margin: 10px 0;
-      padding: 0;
-      text-align: center;
-      width: 100%;
-      z-index: 1
-    }
-  
-    @media (min-width:960px) {
-      .carousel .control-dots {
-        bottom: 0
-      }
-    }
-  
-    .carousel .control-dots .dot {
-      transition: opacity .25s ease-in;
-      opacity: .3;
-      filter: alpha(opacity=30);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
-      background: #fff;
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-      cursor: pointer;
-      display: inline-block;
-      margin: 0 8px
-    }
-  
-    .carousel .control-dots .dot.selected,
-    .carousel .control-dots .dot:hover {
-      opacity: 1;
-      filter: alpha(opacity=100)
-    }
-  
-    .carousel .carousel-status {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 5px;
-      font-size: 10px;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
-      color: #fff
-    }
-  
-    .carousel:hover .slide .legend {
-      opacity: 1
     }
   </style>
 
@@ -3638,8 +3357,19 @@
 
           @media screen and (max-width: 540px) {
             .sd[data-s-8426b819-e1fc-460f-a43e-34874b4469c6] {
-              margin: 70px 0px 50px 0px;
-              padding: 0px 50px;
+              margin: 70px 0px 30px 0px;
+              padding: 0px 30px;
+              --gap-h-8426b819-e1fc-460f-a43e-34874b4469c6: 0px;
+              --gap-v-8426b819-e1fc-460f-a43e-34874b4469c6: 0px;
+              width: calc(100% - (var(--gap-h-66e5ee07-e9fb-47f8-96c6-d2ee282a96e5) * 0));
+              max-width: calc(100% - (var(--gap-h-66e5ee07-e9fb-47f8-96c6-d2ee282a96e5) * 0));
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .sd[data-s-8426b819-e1fc-460f-a43e-34874b4469c6] {
+              margin: 70px 0px 30px 0px;
+              padding: 0px 10px;
               --gap-h-8426b819-e1fc-460f-a43e-34874b4469c6: 0px;
               --gap-v-8426b819-e1fc-460f-a43e-34874b4469c6: 0px;
               width: calc(100% - (var(--gap-h-66e5ee07-e9fb-47f8-96c6-d2ee282a96e5) * 0));
@@ -12344,51 +12074,76 @@
                     </div>
                   </div>
                 </div>
-                <div class="Visible__VisibleSp-sc-1gvwnzg-1 hwWMJf">
-                  <div class="styles__CarouselWrapper-sc-17khp60-0 bIKKRQ">
-                    <div class="styles__CarouselWrapperInner-sc-17khp60-1 rGJur">
-                      <div class="carousel-root">
-                        <div class="carousel carousel-slider" style="width:100%">
-                          <div class="slider-wrapper axis-horizontal">
-                            <ul class="slider animated"
-                              style="-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-transition-duration:350ms;-moz-transition-duration:350ms;-o-transition-duration:350ms;transition-duration:350ms;-ms-transition-duration:350ms">
-                              <li class="slide selected previous">
-                                <div class="styles__BalloonWrapper-sc-11uyna0-2 fLWgls">
-                                  <div class="styles__Circle-sc-8m5dct-0 iIfyeA"><img src="img/icon01.png"
-                                      class="styles__IconImage-sc-8m5dct-1 fyVwYs">
-                                    <h3 class="styles__Title-sc-8m5dct-2 hHCYuh">自宅撮影</h3>
-                                    <div class="styles__Content-sc-8m5dct-3 dTLBIi">
-                                      商品を自宅で受け取り、自分のペースで撮影する案件。</div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="slide">
-                                <div class="styles__BalloonWrapper-sc-11uyna0-2 hUiOOh">
-                                  <div class="styles__Circle-sc-8m5dct-0 jSYyCo"><img src="img/icon02.png"
-                                      class="styles__IconImage-sc-8m5dct-1 fyVwYs">
-                                    <h3 class="styles__Title-sc-8m5dct-2 ejMiHU">スタジオ撮影</h3>
-                                    <div class="styles__Content-sc-8m5dct-3 dTLBIi">
-                                      プロのスタッフがサポートする安心のスタジオ撮影案件。</div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li class="slide">
-                                <div class="styles__BalloonWrapper-sc-11uyna0-2 fLWgls">
-                                  <div class="styles__Circle-sc-8m5dct-0 fWgUbn"><img src="img/icon03.png"
-                                      class="styles__IconImage-sc-8m5dct-1 fyVwYs">
-                                    <h3 class="styles__Title-sc-8m5dct-2 PmYDq">写真・動画両方対応</h3>
-                                    <div class="styles__Content-sc-8m5dct-3 dTLBIi">
-                                      写真だけ、動画だけ、またはその両方の案件も多数。</div>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div><button class="styles__NextButton-sc-17khp60-2 bEdzij"></button>
+                <div class="c-carousel sp-only">
+                  <input class="c-carousel__activator-main" type="radio" checked="" id="carousel-main-1"
+                    name="carousel-main">
+                  <input class="c-carousel__activator-main" type="radio" id="carousel-main-2" name="carousel-main">
+                  <input class="c-carousel__activator-main" type="radio" id="carousel-main-3" name="carousel-main">
+                  <div class="c-carousel__main">
+                    <div class="c-carousel__main-control">
+                      <div class="c-carousel__main-control-item">
+                        <label class="c-carousel__btn-next-main" for="carousel-main-2">
+                          <img class="c-image-arrow" src="img/carousel_arrow_next.svg" alt="">
+                        </label>
+                      </div>
+                      <div class="c-carousel__main-control-item">
+                        <label class="c-carousel__btn-prev-main" for="carousel-main-1">
+                          <img class="c-image-arrow" src="img/carousel_arrow_prev.svg" alt="">
+                        </label>
+                        <label class="c-carousel__btn-next-main" for="carousel-main-3">
+                          <img class="c-image-arrow" src="img/carousel_arrow_next.svg" alt="">
+                        </label>
+                      </div>
+                      <div class="c-carousel__main-control-item">
+                        <label class="c-carousel__btn-prev-main" for="carousel-main-2">
+                          <img class="c-image-arrow" src="img/carousel_arrow_prev.svg" alt="">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="c-carousel__main-track">
+                      <div class="c-carousel__main-item">
+                        <div class="iIfyeA"><img src="img/icon01.png" class="styles__IconImage-sc-8m5dct-1 fyVwYs">
+                          <h3 class="styles__Title-sc-8m5dct-2 hHCYuh">自宅撮影</h3>
+                          <div class="styles__Content-sc-8m5dct-3 dTLBIi">
+                            商品を自宅で受け取り、自分のペースで撮影する案件。</div>
+                        </div>
+                      </div>
+                      <div class="c-carousel__main-item">
+                        <div class="styles__BalloonWrapper-sc-11uyna0-2 hUiOOh">
+                          <div class="jSYyCo"><img src="img/icon02.png" class="styles__IconImage-sc-8m5dct-1 fyVwYs">
+                            <h3 class="styles__Title-sc-8m5dct-2 ejMiHU">スタジオ撮影</h3>
+                            <div class="styles__Content-sc-8m5dct-3 dTLBIi">
+                              プロのスタッフがサポートする安心のスタジオ撮影案件。</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-carousel__main-item">
+                        <div class="styles__BalloonWrapper-sc-11uyna0-2 fLWgls">
+                          <div class="styles__Circle-sc-8m5dct-0 fWgUbn"><img src="img/icon03.png"
+                              class="styles__IconImage-sc-8m5dct-1 fyVwYs">
+                            <h3 class="styles__Title-sc-8m5dct-2 PmYDq">写真・動画両方対応</h3>
+                            <div class="styles__Content-sc-8m5dct-3 dTLBIi">
+                              写真だけ、動画だけ、またはその両方の案件も多数。</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </section>
               <section class="styles__ConceptSection-sc-1jpj4e5-0 djJTfL">
                 <div class="styles__ContentArea-sc-1jpj4e5-2 laRizg">
@@ -12694,52 +12449,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" id=""
-    charset="">!function (a, d, c, g) { if (!d[a]) { d[a] = function () { d[a].instances.push(this); this.init && this.init() }; d[a].instances = []; for (var b = 0, e = ["pageview"], h = e.length; b < h; b++)d[a].prototype[e[b]] = function (f) { return function () { this["tmp_" + f] = this["tmp_" + f] || []; this["tmp_" + f].push(Array.prototype.slice.call(arguments)) } }(e[b]); b = c.getElementsByTagName("script")[0]; c = c.createElement("script"); c.async = !0; c.src = g; b.parentNode.insertBefore(c, b) } }("IMLOG", window, document, "//dmp.im-apps.net/sdk/log.js");
-      (function () { var a = new IMLOG; a.siteId = google_tag_manager["rm"]["53542856"](176); a.trackerUrl = "https://b6.im-apps.net/collect"; a.pageview({ cv: google_tag_manager["rm"]["53542856"](180) }) })();</script>
-  <script type="text/javascript" id=""
-    charset="">!function (a, d, c, g) { if (!d[a]) { d[a] = function () { d[a].instances.push(this); this.init && this.init() }; d[a].instances = []; for (var b = 0, e = ["pageview"], h = e.length; b < h; b++)d[a].prototype[e[b]] = function (f) { return function () { this["tmp_" + f] = this["tmp_" + f] || []; this["tmp_" + f].push(Array.prototype.slice.call(arguments)) } }(e[b]); b = c.getElementsByTagName("script")[0]; c = c.createElement("script"); c.async = !0; c.src = g; b.parentNode.insertBefore(c, b) } }("IMLOG", window, document, "//dmp.im-apps.net/sdk/log.js");
-      (function () { var a = new IMLOG; a.siteId = google_tag_manager["rm"]["53542856"](166); a.escvid = google_tag_manager["rm"]["53542856"](167); a.score = google_tag_manager["rm"]["53542856"](168); a.cvid = google_tag_manager["rm"]["53542856"](172); a.segment_eids = google_tag_manager["rm"]["53542856"](173); a.user_id = google_tag_manager["rm"]["53542856"](174); a.pageview({ custom_data: google_tag_manager["rm"]["53542856"](175) }) })();</script>
-  <script type="text/javascript" id=""
-    charset="">(function () { if (100 != google_tag_manager["rm"]["53542856"](165)) { var c = Math.floor(Date.now() / 1E3), b = "_im_score_20409", d = sessionStorage.getItem(b + "_exp"); if (!(d && d > c)) { var a = new XMLHttpRequest; a.onloadend = function () { var e = 180; if (200 == a.status) try { var f = JSON.parse(a.response); f.escvid && (sessionStorage.setItem(b, f.score), e = 21600) } catch (g) { } sessionStorage.setItem(b + "_exp", c + e) }; a.open("GET", "https://sync6.im-apps.net/v1/fraud?escvid\x3d20409"); a.withCredentials = !0; a.timeout = 3E3; a.send() } } })();</script>
-  <script id="" text="" charset="" type="text/javascript"
-    src="https://cdn-edge.karte.io/8785b41a0fde5792fc3e9be2e872f210/edge.js"></script>
-  <script type="text/javascript" id=""
-    charset="">!function (b) { if (!window[b]) { var a = window[b] = function () { var c = [].slice.call(arguments); return a.x ? a.x.apply(0, c) : a.q.push(c) }; a.q = []; a.i = Date.now(); a.allow = function () { a.o = "allow" }; a.deny = function () { a.o = "deny" } } }("krt");</script>
-  <script id="" text="" charset="" type="text/javascript" src="//statics.a8.net/a8sales/a8crossDomain.js"></script>
-  <script id="" text="" charset="" type="text/javascript" src="//statics.a8.net/a8sales/a8crossDomain.js"></script>
-  <script type="text/javascript" id=""
-    charset="">(function (a, b, d) { a._ltq = a._ltq || []; a._lt = a._lt || function () { a._ltq.push(arguments) }; var e = location.protocol === "https:" ? "https://d.line-scdn.net" : "http://d.line-cdn.net", c = b.createElement("script"); c.async = 1; c.src = d || e + "/n/line_tag/public/release/v1/lt.js"; b = b.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b) })(window, document); _lt("init", { customerType: "lap", tagId: "93ce526e-eb93-4f60-ab7b-48315a51e764" }); _lt("send", "pv", ["93ce526e-eb93-4f60-ab7b-48315a51e764"]);</script>
-  <script id="" text="" charset="" type="text/javascript" src="//statics.a8.net/a8sales/a8sales.js"></script>
-  <script type="text/javascript" id=""
-    charset="">(function (b, a, c) { b = a.getElementsByTagName(c)[0]; a = a.createElement(c); a.async = !0; a.src = "https://dmp.im-apps.net/js/1014721/0001/itm.js"; b.parentNode.insertBefore(a, b) })(window, document, "script");</script>
-  <script id="" text="" charset="" type="text/javascript" src="//statics.a8.net/a8sales/a8sales.js"></script>
-  <script type="text/javascript" id=""
-    charset="">(function (a, e, b, f, g, c, d) { a[b] = a[b] || function () { (a[b].q = a[b].q || []).push(arguments) }; c = e.createElement(f); c.async = 1; c.src = "https://www.clarity.ms/tag/" + g; d = e.getElementsByTagName(f)[0]; d.parentNode.insertBefore(c, d) })(window, document, "clarity", "script", "hcewrm4lyg");</script>
-  <script type="text/javascript" id=""
-    charset="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "358294376205821"); fbq("track", "PageView");</script>
-  <script src="https://js.hsforms.net/forms/v2.js" async=""></script>
-  <script id="GTM-P3P3RGK" data-nscript="afterInteractive">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-P3P3RGK');
-  </script>
-  <script id="GTM-5V7WDH5" data-nscript="afterInteractive">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5V7WDH5');
-  </script>
-  
 </body>
 
 </html>
