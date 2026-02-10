@@ -89,7 +89,7 @@ try {
   $mail->setFrom($config['GMAIL_USERNAME'], '=?UTF-8?B?' . base64_encode('集客の柱') . '?=');
   $mail->addReplyTo($email_raw, $name_raw);
 
-  $recipients = ['info@rover.co.jp', 'gude_0417@icloud.com'];
+  $recipients = ['info@rover.co.jp'];
   foreach ($recipients as $rcpt) {
     $mail->addAddress($rcpt);
   }
