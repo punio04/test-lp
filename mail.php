@@ -74,42 +74,27 @@ function sendToSheet($url, $payload)
 $mail = new PHPMailer(true);
 
 try {
-  // --- SMTP（onamae）---
+  // --- SMTP ---
   $mail->CharSet  = 'UTF-8';
   $mail->Encoding = 'base64';
   $mail->isSMTP();
-  $mail->Host       = $config['SMTP_HOST'];          // mail1001.onamae.ne.jp
+  $mail->Host       = 'smtp.gmail.com';
   $mail->SMTPAuth   = true;
-  $mail->Username   = $config['SMTP_USERNAME'];      // info@rover.co.jp
-  $mail->Password   = $config['SMTP_PASSWORD'];      // メールパスワード
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;   // SSL
-  $mail->Port       = (int)$config['SMTP_PORT'];     // 465
-
-  // （環境によって証明書エラーが出る場合用：必要になったらON）
-  // $mail->SMTPOptions = [
-  //   'ssl' => [
-  //     'verify_peer' => false,
-  //     'verify_peer_name' => false,
-  //     'allow_self_signed' => true,
-  //   ],
-  // ];
+  $mail->Username   = $config['GMAIL_USERNAME'];
+  $mail->Password   = $config['GMAIL_APP_PASSWORD'];
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $mail->Port       = 587;
 
   // --- 管理者宛 ---
-  $mail->setFrom($config['SMTP_USERNAME'], '集客の柱');
-  $mail->Sender = $config['SMTP_USERNAME'];
-  $mail->ReturnPath = $config['SMTP_USERNAME'];
-  $mail->addCustomHeader('Errors-To', $config['SMTP_USERNAME']);
+  $mail->setFrom($config['GMAIL_USERNAME'], '=?UTF-8?B?' . base64_encode('集客の柱') . '?=');
   $mail->addReplyTo($email_raw, $name_raw);
 
-  $recipients = [
-    'info@rover.co.jp'
-  ];
-
+  $recipients = ['info@rover.co.jp', 'gude_0417@icloud.com'];
   foreach ($recipients as $rcpt) {
     $mail->addAddress($rcpt);
   }
 
-  $mail->Subject = '【集客の柱】お問い合わせがありました';
+  $mail->Subject = '=?UTF-8?B?' . base64_encode('【集客の柱】お問い合わせがありました') . '?=';
 
   $body  = "以下の内容でお問い合わせがありました。\n\n";
   $body .= "━━━━━━━━━━━━━━━━━━━\n";
@@ -131,25 +116,16 @@ try {
   $autoReply->CharSet  = 'UTF-8';
   $autoReply->Encoding = 'base64';
   $autoReply->isSMTP();
-  $autoReply->Host       = $config['SMTP_HOST'];
+  $autoReply->Host       = 'smtp.gmail.com';
   $autoReply->SMTPAuth   = true;
-  $autoReply->Username   = $config['SMTP_USERNAME'];
-  $autoReply->Password   = $config['SMTP_PASSWORD'];
-  $autoReply->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-  $autoReply->Port       = (int)$config['SMTP_PORT'];
+  $autoReply->Username   = $config['GMAIL_USERNAME'];
+  $autoReply->Password   = $config['GMAIL_APP_PASSWORD'];
+  $autoReply->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $autoReply->Port       = 587;
 
-  // （必要になったらON）
-  // $autoReply->SMTPOptions = [
-  //   'ssl' => [
-  //     'verify_peer' => false,
-  //     'verify_peer_name' => false,
-  //     'allow_self_signed' => true,
-  //   ],
-  // ];
-
-  $autoReply->setFrom($config['SMTP_USERNAME'], '集客の柱');
+  $autoReply->setFrom($config['GMAIL_USERNAME'], '=?UTF-8?B?' . base64_encode('集客の柱') . '?=');
   $autoReply->addAddress($email_raw, $name_raw);
-  $autoReply->Subject = '【集客の柱】お問い合わせありがとうございます';
+  $autoReply->Subject = '=?UTF-8?B?' . base64_encode('【集客の柱】お問い合わせありがとうございます') . '?=';
 
   $autoReplyBody  = "{$name_raw} 様\n\n";
   $autoReplyBody .= "この度はお問い合わせいただきありがとうございます。\n";
