@@ -1,7 +1,5 @@
 <?php
 return [
-  'SMTP_HOST' => 'mail1001.onamae.ne.jp',
-  'SMTP_PORT' => 465,
-  'SMTP_USERNAME' => 'info@rover.co.jp',
-  'SMTP_PASSWORD' => 'rover-2022',
+  'GMAIL_USERNAME' => 'gudeko.0417@gmail.com',
+  'GMAIL_APP_PASSWORD' => 'xuqo uamp tomh jtgx'
 ];
